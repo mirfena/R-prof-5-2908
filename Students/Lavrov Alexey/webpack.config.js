@@ -1,6 +1,8 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 const path = require('path');
+
 module.exports = {
     entry: {
         main: path.resolve(__dirname, 'src', 'index.jsx')
@@ -28,6 +30,7 @@ module.exports = {
                             { "loose": true }
                         ]
                     ]
+                    // preset: ["@babel/preset-env", "@babel/preset-react"]
                 }
             }
         ]
